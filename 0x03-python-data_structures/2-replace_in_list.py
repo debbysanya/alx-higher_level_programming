@@ -2,6 +2,8 @@
 def replace_in_list(my_list, idx, element):
     x = 0
     length = len(my_list)
+    if idx == 0:
+        my_list[idx] = element
     if idx < 0:
         return my_list
     elif idx > (length - 1):
