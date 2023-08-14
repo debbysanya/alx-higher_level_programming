@@ -4,13 +4,9 @@ def replace_in_list(my_list, idx, element):
     length = len(my_list)
     if idx == 0:
         my_list[idx] = element
-    if idx < 0:
+    if (idx < 0) or (idx > (length - 1)):
         return my_list
-    elif idx > (length - 1):
-            return my_list
-    for i in my_list:
-        x += 1
-        if idx == x:
-            my_list[idx] = element
-    return my_list
+    else:
+        my_list[idx] = element
+        return my_list
 
